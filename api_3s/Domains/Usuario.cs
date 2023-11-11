@@ -19,5 +19,7 @@ public partial class Usuario
 
     public string QrCode { get; set; } = null!;
 
+    public virtual ICollection<Funcionario> Funcionarios { get; set; } = new List<Funcionario>();
+
     public virtual TipoUsuario IdTipoUsuarioNavigation { get; set; } = null!;
 }

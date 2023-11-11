@@ -30,13 +30,13 @@ public partial class Context3S : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-1MMUS7M\\SQLEXPRESS; initial catalog=db_3s; Integrated Security=SSPI;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-TSVJC16\\SQLEXPRESS; initial catalog=db_3s; Integrated Security=SSPI;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Cargo>(entity =>
         {
-            entity.HasKey(e => e.IdCargo).HasName("PK__Cargo__6C9856256CD01A9E");
+            entity.HasKey(e => e.IdCargo).HasName("PK__Cargo__6C98562528BD8E27");
 
             entity.ToTable("Cargo");
 
@@ -49,7 +49,7 @@ public partial class Context3S : DbContext
 
         modelBuilder.Entity<Funcionario>(entity =>
         {
-            entity.HasKey(e => e.IdFuncionario).HasName("PK__Funciona__35CB052A04584FB8");
+            entity.HasKey(e => e.IdFuncionario).HasName("PK__Funciona__35CB052AE0091A12");
 
             entity.ToTable("Funcionario");
 
@@ -61,12 +61,17 @@ public partial class Context3S : DbContext
             entity.HasOne(d => d.IdCargoNavigation).WithMany(p => p.Funcionarios)
                 .HasForeignKey(d => d.IdCargo)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Funcionar__IdCar__2D27B809");
+                .HasConstraintName("FK__Funcionar__IdCar__2E1BDC42");
+
+            entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.Funcionarios)
+                .HasForeignKey(d => d.IdUsuario)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Funcionar__IdUsu__2D27B809");
         });
 
         modelBuilder.Entity<Marcacao>(entity =>
         {
-            entity.HasKey(e => e.IdMarcacao).HasName("PK__Marcacao__0FFD433199528915");
+            entity.HasKey(e => e.IdMarcacao).HasName("PK__Marcacao__0FFD4331D2DB0B9D");
 
             entity.ToTable("Marcacao");
 
@@ -75,17 +80,17 @@ public partial class Context3S : DbContext
             entity.HasOne(d => d.IdFuncionarioNavigation).WithMany(p => p.Marcacaos)
                 .HasForeignKey(d => d.IdFuncionario)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Marcacao__IdFunc__30F848ED");
+                .HasConstraintName("FK__Marcacao__IdFunc__31EC6D26");
 
             entity.HasOne(d => d.IdTipoMarcacaoNavigation).WithMany(p => p.Marcacaos)
                 .HasForeignKey(d => d.IdTipoMarcacao)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Marcacao__IdTipo__300424B4");
+                .HasConstraintName("FK__Marcacao__IdTipo__30F848ED");
         });
 
         modelBuilder.Entity<TipoMarcacao>(entity =>
         {
-            entity.HasKey(e => e.IdTipoMarcacao).HasName("PK__tipoMarc__435AE5686DBFF69E");
+            entity.HasKey(e => e.IdTipoMarcacao).HasName("PK__tipoMarc__435AE568B5BAEC8F");
 
             entity.ToTable("tipoMarcacao");
 
@@ -98,7 +103,7 @@ public partial class Context3S : DbContext
 
         modelBuilder.Entity<TipoUsuario>(entity =>
         {
-            entity.HasKey(e => e.IdTipoUsuario).HasName("PK__TipoUsua__CA04062BC9C88975");
+            entity.HasKey(e => e.IdTipoUsuario).HasName("PK__TipoUsua__CA04062B1DA37638");
 
             entity.ToTable("TipoUsuario");
 
@@ -110,7 +115,7 @@ public partial class Context3S : DbContext
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.IdUsuario).HasName("PK__Usuario__5B65BF97FAEE1D83");
+            entity.HasKey(e => e.IdUsuario).HasName("PK__Usuario__5B65BF974C7E5026");
 
             entity.ToTable("Usuario");
 

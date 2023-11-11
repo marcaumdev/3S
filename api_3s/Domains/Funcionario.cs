@@ -5,23 +5,9 @@ namespace api_3s.Domains;
 
 public partial class Funcionario
 {
-    private byte idTipoUsuario;
-    private string nome;
-    private string cpf;
-    private string senha;
-    private string email;
-
-    public Funcionario(byte idTipoUsuario, string nome, string cpf, string senha, string email, byte idCargo)
-    {
-        this.idTipoUsuario = idTipoUsuario;
-        this.nome = nome;
-        this.cpf = cpf;
-        this.senha = senha;
-        this.email = email;
-        IdCargo = idCargo;
-    }
-
     public int IdFuncionario { get; set; }
+
+    public int IdUsuario { get; set; }
 
     public byte IdCargo { get; set; }
 
@@ -30,6 +16,8 @@ public partial class Funcionario
     public bool Ativo { get; set; }
 
     public virtual Cargo IdCargoNavigation { get; set; } = null!;
+
+    public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
 
     public virtual ICollection<Marcacao> Marcacaos { get; set; } = new List<Marcacao>();
 }
