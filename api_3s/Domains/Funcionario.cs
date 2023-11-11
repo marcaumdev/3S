@@ -5,6 +5,11 @@ namespace api_3s.Domains;
 
 public partial class Funcionario
 {
+    public Funcionario(byte idCargo)
+    {
+        IdCargo = idCargo;
+    }
+
     public int IdFuncionario { get; set; }
 
     public int IdUsuario { get; set; }

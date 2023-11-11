@@ -5,6 +5,15 @@ namespace api_3s.Domains;
 
 public partial class Usuario
 {
+    public Usuario(byte idTipoUsuario, string nome, string cpf, string senha, string email)
+    {
+        IdTipoUsuario = idTipoUsuario;
+        Nome = nome;
+        Cpf = cpf;
+        Senha = senha;
+        Email = email;
+    }
+
     public int IdUsuario { get; set; }
 
     public byte IdTipoUsuario { get; set; }

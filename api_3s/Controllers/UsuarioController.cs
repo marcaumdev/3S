@@ -6,6 +6,7 @@ using System.Net.Mail;
 using System.Net.Mime;
 using System.Net;
 using System.Text.RegularExpressions;
+using api_3s.Interface;
 
 namespace api_3s.Controllers;
 
@@ -13,11 +14,22 @@ namespace api_3s.Controllers;
 [Route("/api/usuario")]
 public class UsuarioController : Controller
 {
+    private readonly IFuncionarioRepository _funcionarioRepository;
+
+    public UsuarioController(IFuncionarioRepository funcionarioRepository)
+    {
+        _funcionarioRepository = funcionarioRepository;
+    }
+
+
     [HttpPost]
     public IActionResult CadastrarUsuario([FromForm] FuncionarioViewModel funcionarioVM)
     {
-        // Funcionario funcionario = new(funcionarioVM.IdTipoUsuario, funcionarioVM.Nome, funcionarioVM.Cpf,
-        //funcionarioVM.Senha, funcionarioVM.Email, funcionarioVM.IdCargo);
+        Usuario usuario = new(funcionarioVM.IdTipoUsuario, funcionarioVM.Nome, funcionarioVM.Cpf,
+        funcionarioVM.Senha, funcionarioVM.Email);
+        Funcionario funcionario = new(funcionarioVM.IdCargo);
+
+        _funcionarioRepository.CadastrarFuncionario(usuario, funcionario);
 
         return Ok();
     }
