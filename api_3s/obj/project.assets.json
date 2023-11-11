@@ -3153,19 +3153,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Senai\\.nuget\\packages\\": {}
+    "C:\\Users\\senai\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Senai\\Desktop\\3S\\api_3s\\api_3s.csproj",
+      "projectUniqueName": "C:\\Users\\senai\\Documents\\3S\\api_3s\\api_3s.csproj",
       "projectName": "api_3s",
-      "projectPath": "C:\\Users\\Senai\\Desktop\\3S\\api_3s\\api_3s.csproj",
-      "packagesPath": "C:\\Users\\Senai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Senai\\Desktop\\3S\\api_3s\\obj\\",
+      "projectPath": "C:\\Users\\senai\\Documents\\3S\\api_3s\\api_3s.csproj",
+      "packagesPath": "C:\\Users\\senai\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\senai\\Documents\\3S\\api_3s\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Senai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\senai\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
