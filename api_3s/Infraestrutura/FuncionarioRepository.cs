@@ -21,4 +21,11 @@ public class FuncionarioRepository : IFuncionarioRepository
 
         _connection.SaveChanges();
     }
+
+    public void CadastrarVisitante(Usuario usuario)
+    {
+        usuario.QrCode = "teste";
+        _connection.Usuarios.Add(usuario);
+        _connection.SaveChanges();
+    }
 }

@@ -23,7 +23,21 @@ public class UsuarioController : Controller
 
 
     [HttpPost]
+    [Route("funcionario")]
     public IActionResult CadastrarUsuario([FromForm] FuncionarioViewModel funcionarioVM)
+    {
+        Usuario usuario = new(funcionarioVM.IdTipoUsuario, funcionarioVM.Nome, funcionarioVM.Cpf,
+        funcionarioVM.Senha, funcionarioVM.Email);
+        Funcionario funcionario = new(funcionarioVM.IdCargo);
+
+        _funcionarioRepository.CadastrarFuncionario(usuario, funcionario);
+
+        return Ok();
+    }
+
+    [HttpPost]
+    [Route("visitante")]
+    public IActionResult CadastrarVisitante([FromForm] FuncionarioViewModel funcionarioVM)
     {
         Usuario usuario = new(funcionarioVM.IdTipoUsuario, funcionarioVM.Nome, funcionarioVM.Cpf,
         funcionarioVM.Senha, funcionarioVM.Email);
