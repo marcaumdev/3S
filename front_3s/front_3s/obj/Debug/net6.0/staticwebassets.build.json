@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LIzsqH1wiW06chHORvzSNYNXS4QUP1rIjvQefHg927g=",
+  "Hash": "wa90TumHqKx90edQcRY2xXSK/dFHOBN5ZH2sJqXms7g=",
   "Source": "front_3s",
   "BasePath": "_content/front_3s",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\front_3s.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\wwwroot\\css\\CascadingStyleSheets.css",
+      "SourceId": "front_3s",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\wwwroot\\",
+      "BasePath": "_content/front_3s",
+      "RelativePath": "css/CascadingStyleSheets.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CascadingStyleSheets.css"
     },
     {
       "Identity": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\wwwroot\\css\\site.css",

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\front_3s.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\wwwroot\\css\\CascadingStyleSheets.css",
+      "PackagePath": "staticwebassets\\css\\CascadingStyleSheets.css"
+    },
+    {
       "Id": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
