@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\front_3s\\front_3s.csproj",
+      "projectUniqueName": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\front_3s.csproj",
       "projectName": "front_3s",
-      "projectPath": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\front_3s\\front_3s.csproj",
+      "projectPath": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\front_3s.csproj",
       "packagesPath": "C:\\Users\\Senai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\front_3s\\obj\\",
+      "outputPath": "C:\\Users\\Senai\\Documents\\projeto\\3S\\front_3s\\front_3s\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Senai\\AppData\\Roaming\\NuGet\\NuGet.Config",

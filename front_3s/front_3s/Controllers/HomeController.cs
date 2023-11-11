@@ -18,6 +18,11 @@ namespace front_3s.Controllers
             return View();
         }
 
+        public IActionResult Cadastro()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
