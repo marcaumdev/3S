@@ -1,13 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body {
-}
-
-.btn {
-    margin-top: 3%;
-    background-color: #7877E6;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +13,7 @@ body {
     justify-content: center;
     height: 100vh;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .box-input {
@@ -28,9 +21,10 @@ body {
     display: flex;
     gap: 12px;
     flex-direction: column;
+    align-items: center;
 }
 
-    .box-input input {
+    .box-input input, .box-input select {
         width: 354px;
         height: 40px;
         border-radius: 12px;
@@ -38,6 +32,7 @@ body {
         padding: 0 12px;
         border: 2px solid #939393;
         color: #939393;
+        
     }
 
 button {
@@ -67,4 +62,25 @@ p {
 
 a {
     text-decoration: none;
+}
+
+img {
+    width: 400px;
+}
+
+.row {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.box-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
 }
