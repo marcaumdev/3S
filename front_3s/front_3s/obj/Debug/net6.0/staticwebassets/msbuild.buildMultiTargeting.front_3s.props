@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\front_3s.props" />
+</Project>
